@@ -1,0 +1,2 @@
+To Deploy:
+aws lambda create-function  --function-name lambda_push_to_splunk_hec_dev --runtime python3.9   --handler lambda_function.lambda_handler --zip-file fileb://lambda_push_to_splunk_hec_dev.zip --role arn:aws:iam::478614889459:role/RRSB_SPLUNK_SERVICE_DEV_ROLE --timeout 10 --memory-size 128
